@@ -11,6 +11,8 @@ import { MyBoothsComponent } from './my-booths/my-booths.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
+import { AddBoothComponent } from './add-booth/add-booth.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.com
     MyBoothsComponent,
     ContactUsComponent,
     PrivacyPolicyComponent,
-    TermsOfServiceComponent
+    TermsOfServiceComponent,
+    AddBoothComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
