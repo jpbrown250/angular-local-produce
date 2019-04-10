@@ -1,0 +1,23 @@
+.global-header.global-header--type-1 {
+    .global-header__content {
+        padding: 0 1em;
+    }
+}
+.primary-nav.primary-nav--type-1 {
+    .primary-nav__menu {
+       padding-inline-start: 0;
+    }
+    .primary-nav__menu-item {
+        display: inline-block;
+        padding: 1em;
+    }
+}
+.main-content.main-content--type-1 {
+
+}
+.global-footer.global-footer--type-1 {
+    .global-footer__menu-item {
+        display: inline-block;
+        padding: .5em;
+    }
+}

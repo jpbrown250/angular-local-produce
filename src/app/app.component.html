@@ -1,19 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<header role="banner">
-  <p>Put company logo, etc. here.</p>
+<header role="banner" class="global-header global-header--type-1">
+  <p class="global-header__content">Locally Sourced</p>
 </header>
-<nav role="navigation">
-  <ul>
-    <li routerLink="/home">Home</li>
-    <li routerLink="/">Local Market</li>
-    <li routerLink="/">Map</li>
-    <li routerLink="/">Sign In</li>
-    <li routerLink="/">My Booth(s)</li>
+<nav role="navigation" class="primary-nav primary-nav--type-1">
+  <ul class="primary-nav__menu">
+    <li class="primary-nav__menu-item" routerLink="/home">Home</li>
+    <li class="primary-nav__menu-item" routerLink="/">Local Market</li>
+    <li class="primary-nav__menu-item" routerLink="/">Map</li>
+    <li class="primary-nav__menu-item" routerLink="/">Sign In</li>
+    <li class="primary-nav__menu-item" routerLink="/">My Booth(s)</li>
   </ul>
 </nav>
-<main role="main">
+<main role="main" class="main-content main-content--type-1">
   <router-outlet></router-outlet>
 </main>
-<footer role="contentinfo">
-  <p>Put copyright, etc. here.</p>
+<footer role="contentinfo" class="global-footer global-footer--type-1">
+  <ul class="global-footer__menu">
+    <li class="global-footer__menu-item" routerLink="/">Contact Us</li>
+    <li class="global-footer__menu-item" routerLink="/">Privacy Policy</li>
+    <li class="global-footer__menu-item" routerLink="/">Terms of Service</li>
+  </ul>
 </footer>
