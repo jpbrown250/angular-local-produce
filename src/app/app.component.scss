@@ -24,7 +24,8 @@
     }
 }
 .main-content.main-content--type-1 {
-
+    // TODO: fix padding 1em left/right to one style instead of on each nav/main/etc
+    padding: 0 1em; 
 }
 .global-footer.global-footer--type-1 {
     .global-footer__menu {
