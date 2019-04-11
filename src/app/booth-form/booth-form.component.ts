@@ -9,9 +9,6 @@ import { Booth } from '../booth';
 })
 export class BoothFormComponent implements OnInit {
 
-  // constructor() {
-  // }
-  // model: Booth;
   model: Booth = {
     // location: {
     //   lat: 10,
@@ -21,11 +18,9 @@ export class BoothFormComponent implements OnInit {
     website: "redhookfoodvendors.com",
     contactNumber: 3333333333,
     boothType: "food",
-    date: new Date()
+    date: new Date() //TODO: this should be set on submit
   }
   ngOnInit() {
-    // console.log(new Booth(1010101010, "event").getBoothTypes());
-    // console.log("booth form loaded");
     var vendor = {
       // location: {
       //   lat: 10,
@@ -49,12 +44,12 @@ export class BoothFormComponent implements OnInit {
   // boothType: Array<"event" | "produce" | "food" | "entertainment" | "merchandise" | "other"> = 
   //   ["event", "produce", "food", "entertainment", "merchandise", "other"];
 
-  // model = new Booth(6197506456, this.boothType[1]);
+  submitted = false;
 
-  // submitted = false;
+  onSubmit() {
+    this.submitted = true;
+  }
 
-  // onSubmit() { this.submitted = true; }
-
-  // // TODO: Remove this when we're done
-  // get diagnostic() { return JSON.stringify(this.model); }
+  // TODO: Remove this when we're done
+  diagnostic() { return JSON.stringify(this.model); }
 }

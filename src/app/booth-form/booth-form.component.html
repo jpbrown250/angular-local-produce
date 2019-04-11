@@ -1,17 +1,21 @@
 <div class="container">
   <h1>Booth Form</h1>
+  <!-- TODO: figure out why component does not have access to ngForm nor ngModel -->
+  <!-- <form #boothForm="ngForm"> -->
   <form>
     <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" required>
+      <label for="name">Cover Photo</label>
+      <!--  [(ngModel)]="model.coverPhoto" name="coverPhoto" -->
+      <input type="text" class="form-control" id="coverPhoto" required>
     </div>
 
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="alterEgo">Alter Ego</label>
       <input type="text" class="form-control" id="alterEgo">
-    </div>
+    </div> -->
 
     <button type="submit" class="btn btn-success">Submit</button>
 
   </form>
+  TODO remove this: {{diagnostic()}}
 </div>
