@@ -9,11 +9,11 @@ import { Booth } from '../booth';
 })
 export class BoothFormComponent implements OnInit {
 
-  constructor() {
-    // console.log(Booth.getBoothTypes());
-  }
+  // constructor() {
+  // }
 
   ngOnInit() {
+    console.log(new Booth(1010101010, "event").getBoothTypes());
     console.log("booth form loaded");
   }
   
