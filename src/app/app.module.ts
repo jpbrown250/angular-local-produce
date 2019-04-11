@@ -13,6 +13,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
 import { AddBoothComponent } from './add-booth/add-booth.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { BoothFormComponent } from './booth-form/booth-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     PrivacyPolicyComponent,
     TermsOfServiceComponent,
     AddBoothComponent,
-    SignInComponent
+    SignInComponent,
+    BoothFormComponent
   ],
   imports: [
     BrowserModule,
