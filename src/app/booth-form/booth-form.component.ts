@@ -11,10 +11,39 @@ export class BoothFormComponent implements OnInit {
 
   // constructor() {
   // }
-
+  // model: Booth;
+  model: Booth = {
+    // location: {
+    //   lat: 10,
+    //   lng: 11
+    // },
+    coverPhoto: "/assets/vendor.jpg",
+    website: "redhookfoodvendors.com",
+    contactNumber: 3333333333,
+    boothType: "food",
+    date: new Date()
+  }
   ngOnInit() {
-    console.log(new Booth(1010101010, "event").getBoothTypes());
-    console.log("booth form loaded");
+    // console.log(new Booth(1010101010, "event").getBoothTypes());
+    // console.log("booth form loaded");
+    var vendor = {
+      // location: {
+      //   lat: 10,
+      //   lng: 11
+      // },
+      coverPhoto: "/assets/vendor.jpg",
+      website: "redhookfoodvendors.com",
+      contactNumber: 3333333333,
+      boothType: "food",
+      date: new Date()
+    }
+    // console.log(new Booth(
+    //   // vendor.location,
+    //   vendor.coverPhoto,
+    //   vendor.website,
+    //   vendor.contactNumber,
+    //   vendor.boothType
+    // ));
   }
   
   // boothType: Array<"event" | "produce" | "food" | "entertainment" | "merchandise" | "other"> = 
@@ -28,5 +57,4 @@ export class BoothFormComponent implements OnInit {
 
   // // TODO: Remove this when we're done
   // get diagnostic() { return JSON.stringify(this.model); }
-
 }
